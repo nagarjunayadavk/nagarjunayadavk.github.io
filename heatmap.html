@@ -50,19 +50,33 @@
             color: #fff;
             border-radius: 2px;
         }
+
+        body {
+            width: 1024px;
+            margin: 0 auto;
+
+        }
+
+        footer pre {
+            border-left: solid 2px #ccc;
+            padding-left: 18px;
+            margin: 2em 0 2em -20px;
+            max-width: 960px;
+            overflow-x: auto;
+        }
     </style>
 </head>
 
 <body>
     <header>
+        <h1>Day / Hour / Minute Heatmap Using D3 Version 3.</h1>
+        This is Heat map for day/hour/minute level.
 
+        <pre>
+                Example data shows concurrent user sessions over time, taken from a development environment.
+        </pre>
     </header>
-    <h1>Day / Hour / Minute Heatmap</h1>
-    This is Heat map for day/hour/minute level.
 
-    <pre>
-            Example data shows concurrent user sessions over time, taken from a development environment.
-    </pre>
 
 
     <div class="heatmapGraph"></div>
@@ -190,8 +204,6 @@
             .attr('font-weight', 'normal')
             .attr("x", "-30");
         //========== Y-axis Ploting End =========
-
-
 
         //============= X-Axis Ploting Start Fixed===========//
         //======= Define time scale for X-axis=========//
